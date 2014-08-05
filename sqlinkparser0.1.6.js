@@ -127,14 +127,14 @@ function uploadData(objectName){
 	}
 	
 	for( var i in valuesArr ) {
-		
-		curCell = document.getElementById('pt1:dataTable:' + i + ':clockInDate:content');
+		//pt1:dataTable:0:clockInDate::content
+		curCell = document.getElementById('pt1:dataTable:' + i + ':clockInDate::content');
 		
 		if(curCell == null) break;
 		
 		if(curCell.value == tuple[count][2]) {
-			document.getElementById('pt1:dataTable:' + i + ':clockInTime:content').value = tuple[i][1];
-			document.getElementById('pt1:dataTable:' + i + ':clockOutTime:content').value = tuple[i][0];
+			document.getElementById('pt1:dataTable:' + i + ':clockInTime::content').value = tuple[i][1];
+			document.getElementById('pt1:dataTable:' + i + ':clockOutTime::content').value = tuple[i][0];
 			count++;
 		}
 		
