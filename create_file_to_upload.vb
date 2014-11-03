@@ -28,7 +28,7 @@ Application.CutCopyMode = False
 Rng.Select
 Rng.UnMerge
 Columns("E:G").Delete Shift:=xlToLeft
-Columns("B:C").Delete Shift:=xlToLeft
+Columns("A:C").Delete Shift:=xlToLeft
 
 ActiveWorkbook.SaveAs Filename:=PathName & "\SQLink" & Replace(Date$, "-", "") & ".csv", FileFormat:=xlCSV, CreateBackup:=False
 
