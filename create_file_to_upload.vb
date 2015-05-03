@@ -8,7 +8,7 @@ Dim Target As Worksheet
 PathName = Application.ActiveWorkbook.Path
 
 
-Set Rng = Range("AH17:AP17", Range("AP17").End(xlDown))
+Set Rng = Range("AL17:AU17", Range("AQ17").End(xlDown))
 
 Rng.Select
 
@@ -27,8 +27,8 @@ Set Rng = Range(Rng, "A1")
 Application.CutCopyMode = False
 Rng.Select
 Rng.UnMerge
-Columns("E:G").Delete Shift:=xlToLeft
-Columns("A:C").Delete Shift:=xlToLeft
+Columns("G:J").Delete Shift:=xlToLeft
+Columns("B:D").Delete Shift:=xlToLeft
 
 ActiveWorkbook.SaveAs Filename:=PathName & "\SQLink" & Replace(Date$, "-", "") & ".csv", FileFormat:=xlCSV, CreateBackup:=False
 
