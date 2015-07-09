@@ -23,12 +23,13 @@
                       "in" :  inTime,
                       "out" : outTime
                       };
+        localStorage.set(date,dates[date]);
         }
     } catch (err) {
         console.log(err);
     }
   }
-  console.log(dates);
+  localStorage.set(
   }
   
   function getNewOutTime(outTime, extraTime) {
