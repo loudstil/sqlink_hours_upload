@@ -29,6 +29,7 @@
         console.log(err);
     }
   }
+  return dates;
   }
   
   function getNewOutTime(outTime, extraTime) {
