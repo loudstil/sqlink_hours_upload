@@ -29,7 +29,6 @@
         console.log(err);
     }
   }
-  localStorage.set(
   }
   
   function getNewOutTime(outTime, extraTime) {
