@@ -28,7 +28,7 @@
         console.log(err);
     }
   }
-  return dates;
+  localStorage.setItem(dates);
   }
   
   function getNewOutTime(outTime, extraTime) {
