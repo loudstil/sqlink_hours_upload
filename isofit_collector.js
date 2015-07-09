@@ -29,6 +29,7 @@
     }
   }
   localStorage.setItem('isofit',dates);
+  return dates;
   }
   
   function getNewOutTime(outTime, extraTime) {
