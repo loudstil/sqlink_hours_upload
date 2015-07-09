@@ -28,7 +28,7 @@
         console.log(err);
     }
   }
-  localStorage.setItem(dates);
+  localStorage.setItem('isofit',dates);
   }
   
   function getNewOutTime(outTime, extraTime) {
