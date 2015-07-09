@@ -23,7 +23,7 @@
                       "in" :  inTime,
                       "out" : outTime
                       };
-        localStorage.set(date,dates[date]);
+        localStorage.setItem(date,dates[date]);
         }
     } catch (err) {
         console.log(err);
