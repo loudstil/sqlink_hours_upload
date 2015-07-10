@@ -29,6 +29,7 @@
     }
   }
   localStorage.setItem('isofit',JSON.stringify(dates));
+  alert("Data Collection has completed");
   return dates;
   }
   
