@@ -28,7 +28,7 @@
         console.log(err);
     }
   }
-  localStorage.setItem('isofit',dates);
+  localStorage.setItem('isofit',JSON.stringify(dates));
   return dates;
   }
   
