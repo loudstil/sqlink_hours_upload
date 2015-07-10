@@ -29,7 +29,7 @@
     }
   }
   localStorage.setItem('isofit',JSON.stringify(dates));
-  alert("Data Collection has completed");
+  alert("Data Collection complete");
   return dates;
   }
   
